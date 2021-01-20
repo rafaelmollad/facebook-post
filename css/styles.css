@@ -42,9 +42,9 @@ a {
   padding: 0 2rem;
 }
 
-/********
- * POST * 
- ********/
+/***************
+ * POST HEADER * 
+ ***************/
 
 .post {
   background: var(--white);
@@ -57,7 +57,7 @@ a {
 .post__header {
   display: flex;
   justify-content: space-between;
-  padding: 1.2rem;
+  padding: 1.2rem 1.6rem 0 1.6rem;
 }
 
 /* Header left */
@@ -146,4 +146,24 @@ a {
   background-size: 7.4rem 43rem;
   background-position: -2.2rem -24rem;
   opacity: 0.6;
+}
+
+/****************
+ * POST CONTENT * 
+ ****************/
+
+.content__paragraph {
+  font-size: 1.5rem;
+  padding: 0.8rem 1.6rem 0.8rem 1.6rem;
+}
+
+.content__image {
+  width: 100%;
+  height: 33rem;
+  object-fit: cover;
+  display: block;
+}
+
+.content__image:hover {
+  cursor: pointer;
 }
