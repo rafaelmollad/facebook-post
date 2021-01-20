@@ -13,6 +13,7 @@
   --background: #f0f2f5;
   --hover-shadow: #f2f2f2;
   --box-shadow: rgba(0, 0, 0, 0.2);
+  --reactions-links: #65676b;
   --black1: #1c1e21;
   --black2: #050505;
 }
@@ -166,4 +167,58 @@ a {
 
 .content__image:hover {
   cursor: pointer;
+}
+
+/***************
+ * POST FOOTER * 
+ ***************/
+
+.footer__reactions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1.6rem;
+  color: var(--reactions-links);
+  font-size: 1.5rem;
+}
+
+.reactions__emojis {
+  display: flex;
+  align-items: center;
+}
+
+.emojis__like,
+.emojis__haha,
+.emojis__love {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.emojis__like {
+  z-index: 2;
+}
+
+.emojis__haha {
+  z-index: 1;
+  left: -0.2rem;
+}
+
+.emojis__love {
+  left: -0.4rem;
+}
+
+.emojis__count {
+  margin-left: 0.3rem;
+}
+
+.comment-shares__shares {
+  margin-left: 0.2rem;
+}
+
+.emojis__count:hover,
+.comment-shares__comments:hover,
+.comment-shares__shares:hover {
+  text-decoration: underline;
 }
