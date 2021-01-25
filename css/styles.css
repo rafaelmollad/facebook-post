@@ -12,11 +12,13 @@
   --white: #fff;
   --background: #f0f2f5;
   --hover-shadow: #f2f2f2;
+  --hover-shadow-2: #e4e6e9;
   --border: #ccc;
   --box-shadow: rgba(0, 0, 0, 0.2);
   --reactions-links: #65676b;
   --black1: #1c1e21;
   --black2: #050505;
+  --green: #2f9a48;
 }
 
 html {
@@ -281,4 +283,147 @@ a {
 
 .share__icon {
   background-position: 0 -20rem;
+}
+
+/* POST COMMENTS */
+.footer__comments {
+  padding: 0.8rem 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: right;
+  color: var(--reactions-links);
+}
+
+.comments__filter {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+}
+
+.filter__icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-image: url("../images/icons-list-4.png");
+  background-size: 7.4rem 43.4rem;
+  background-repeat: no-repeat;
+  background-position: -5.4rem -36.4rem;
+  opacity: 0.6;
+  vertical-align: middle;
+}
+
+/* "Write a comment..." box */
+.comments__box {
+  display: flex;
+  align-items: center;
+}
+
+.box__profile {
+  margin-right: 1rem;
+  position: relative;
+}
+
+.box__profile::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0.7rem;
+  height: 0.7rem;
+  bottom: 0.3rem;
+  left: 2.3rem;
+  background: var(--green);
+  border: 0.3rem solid var(--white);
+  border-radius: 50%;
+}
+
+.box__profile:hover {
+  cursor: pointer;
+}
+
+.profile__pic {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+}
+
+.box__bar {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.bar__input {
+  background: var(--background);
+  border: none;
+  padding: 12px;
+  font-size: 1.5rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  outline: none;
+  flex: 1;
+}
+
+.bar__input::placeholder {
+  opacity: 0.8;
+}
+
+.bar__input:focus::-webkit-input-placeholder {
+  opacity: 0.6;
+}
+
+.bar__emojis {
+  display: flex;
+  align-items: center;
+  height: 4.16rem;
+  background: var(--background);
+  padding-right: 1.2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.emojis__insert,
+.emojis__attach,
+.emojis__gif,
+.emojis__sticker {
+  border-radius: 50%;
+  padding: 0.5rem;
+  line-height: 0.5rem;
+  margin-left: 0.3rem;
+  cursor: pointer;
+}
+
+.emojis__insert:hover,
+.emojis__attach:hover,
+.emojis__gif:hover,
+.emojis__sticker:hover {
+  background: var(--hover-shadow-2);
+}
+
+.insert__emoji,
+.attach__emoji,
+.gif__emoji,
+.sticker__emoji {
+  width: 1.6rem;
+  height: 1.6rem;
+  display: inline-block;
+  background-image: url("../images/icons-list-3.png");
+  background-size: 26px 774px;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+.insert__emoji {
+  background-position: 0 -328px;
+}
+
+.attach__emoji {
+  background-position: 0 -274px;
+}
+
+.gif__emoji {
+  background-position: 0 -346px;
+}
+
+.sticker__emoji {
+  background-position: 0 -400px;
 }
